@@ -8,12 +8,13 @@ namespace Dictionary
     {
         public TKey Key { get; set; }
         public TValue Value { get; set; }
-        public int Next { get; set; } = -1;
+        public int Next { get; set; } 
 
-        public DictionaryElement(TKey key, TValue value)
+        public DictionaryElement(TKey key, TValue value,int next=-1)
         {
             Key = key;
             Value = value;
+            Next = next;
         }
     }
 }
